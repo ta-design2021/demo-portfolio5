@@ -1,0 +1,212 @@
+@charset "UTF-8";
+
+/*-------------------------------------------
+共通
+-------------------------------------------*/
+html {
+  font-size: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f4f9ff;
+  color: #432;
+  font-size: 0.85rem;
+}
+
+a {
+  color: #432;
+  text-decoration: none;
+}
+
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+/*
+コンテンツ幅を設定するための共通クラス
+*/
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.sub-title {
+  font-size: 1.125rem;
+}
+
+
+/*-------------------------------------------
+header
+-------------------------------------------*/
+#header {
+  margin: 60px 0 10px;
+}
+
+#header .site-logo {
+  width: 150px;
+  line-height: 1px;
+  padding-bottom: 10px;
+}
+
+#header .site-logo a {
+  display: block;
+}
+
+/*-------------------------------------------
+main
+-------------------------------------------*/
+#main-visu {
+  margin-bottom: 40px;
+}
+
+/* index */
+
+#index {
+  background-color: #fff;
+  margin-bottom: 40px;
+}
+
+.index-box {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.sub-title {
+  padding: 20px 0 10px 0;
+}
+
+.index-txt li {
+  padding-bottom: 20px;
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+
+/* dettail */
+#detail {
+  margin-bottom: 80px;
+}
+
+/* #detail > .sub-title {
+  margin: 0 auto;
+} */
+
+.detail-box {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.detail-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.detail-img {
+  width: 45%;
+}
+
+.detail-txt {
+  width: 45%;
+}
+
+.detail-txt > h2 {
+  padding-bottom: 20px;
+  font-size: 1.125rem;
+}
+
+.detail-info {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+  margin-bottom: 20px;
+  padding: 10px 0;
+}
+
+.detail-info dt {
+  width: 25%;
+}
+
+.detail-info dd {
+  width: 75%;
+}
+
+.detail-txt li:first-child {
+  padding-bottom: 20px;
+}
+
+.detail-txt a {
+  border-bottom: 1px solid;
+}
+
+.detail-txt a:hover {
+  opacity: .5;
+}
+
+
+
+
+
+/*-------------------------------------------
+footer
+-------------------------------------------*/
+#footer {
+  margin: 0 auto;
+}
+
+.footer-box {
+  max-width: 600px;
+  font-size: 0.65rem;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+
+/*-------------------------------------------
+sp
+-------------------------------------------*/
+@media screen and (max-width: 1024px) {
+  /* header */
+
+
+  /* main */
+  #index {
+    padding: 0 30px;
+  }
+
+  #detail {
+    width: 100%;
+    padding: 0 30px;
+  }
+
+  .detail-content {
+    flex-direction: column;
+  }
+
+  .detail-img {
+    width: 100%;
+    margin: 0 0 25px 0;
+  }
+
+  .detail-txt {
+    width: 100%;
+    margin: 0 0 25px 0;
+  }
+
+  /* footer */
+  #footer {
+    width: 100%;
+    padding: 0 30px;
+  }
+
+  
+}
